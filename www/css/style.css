@@ -1,0 +1,60 @@
+/* Empty. Add your own CSS if you like */
+
+.tabs-top > .tabs, .tabs.tabs-top {
+  top:50px;
+  /*padding-top: -170px;*/
+  /*background-position: bottom;*/
+  background-color: #0c60ee;
+  color:#ffffff;
+}
+
+.header .col {
+  background-color: #0c60ee;
+  border: solid 1px #f8f8f8;
+  color:#ffffff;
+
+}
+.table{
+  margin-top: 48px;
+  margin-bottom :-98px;
+}
+
+
+.col {
+  border: solid 1px grey;
+  border-bottom: solid 1px grey;
+}
+
+/*.col:last-child {*/
+  /*border-right: solid 1px grey;*/
+/*}*/
+
+.incomecard {
+margin-top: 70px;
+  margin: 100px 0px;
+  border-radius: 0px;
+  background-color: #ffffff;
+  margin-right: -210px;
+}
+.item-input {
+  align-items: center;
+
+}
+.item {
+  border-width: 1px;
+}
+.formcard{
+  margin: 16px 3px;
+}
+.addgroup {
+  margin-top: 170px;
+  padding-top: 0;
+}
+
+ .b {
+  font-size: 26px;
+  margin: 10px 0 0 10px;
+}
+ .editIcon { position: absolute;
+   right: 30px;
+ }

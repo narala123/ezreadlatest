@@ -1,0 +1,33 @@
+<div>
+
+</div>
+
+<div class="row responsive-md  incomecard">
+  <div>
+    <div class="card">
+      <form ng-submit="groupCtrl.groupSubmit()">
+        <div class="item item-text-wrap">
+          <h1 align="center" class="abc">Add Your Group</h1>
+
+          <div class="list">
+            <label class="item item-input item-floating-label">
+              <span class="input-label"><b>Enter Group Name</b></span>
+              <input type="text" placeholder="Enter Group Name" ng-model="groupCtrl.group.groupname">
+            </label>
+            <br>
+
+            <div align="center">
+              <button type="submit" class="button button-block button-positive" ng>
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div ng-repeat = "users in groupCtrl.groupNames">
+  <h1>{{users.groupName}}</h1>
+</div>

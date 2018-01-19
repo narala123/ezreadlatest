@@ -1,0 +1,80 @@
+<div>
+
+
+</div>
+<div class="row responsive-md  incomecard">
+
+
+  <div class="list card formcard ">
+
+    <form ng-submit="expCtrl.saveExpense()">
+
+      <lable class="item item-input">
+        <b><i class="fa fa-inr" aria-hidden="true"></i></b>
+        <span class="input-label"><b>Date</b></span>
+      <ionic-datepicker date="currentDate" min="minDate" max="maxDate" callback="expCtrl.datePickerCallback">
+        <input type="text" placeholder="select your date Here"> {{ currentDate | date:'dd/MM/yyyy' }}
+        </input>
+      </ionic-datepicker>
+      </lable>
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+          <b>Category</b>
+        </div>
+
+        <select style="right:30px; padding: 0 30px 0 20px;" ng-model="expCtrl.expense.categoryType">
+
+          <!--<optio>Select</optio>&ndash;&gt;-->
+
+          <option value="Electronic">Electronics</option>
+          <option value="Groceries">Groceries</option>
+          <option value="Shopping">Shopping</option>
+          <option value="OtherItem">OtherItem</option>
+        </select>
+      </label>
+
+      <label class="item item-input">
+        <b><i class="fa fa-inr" aria-hidden="true"></i></b>
+        <span class="input-label"><b>Amount</b></span>
+        <input type="text" id="amount" ng-model="expCtrl.expense.amount" placeholder="Enter Your Amount Here">
+      </label>
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+          <b>Payment Type</b>
+        </div>
+
+        <select style="right:30px; padding: 0 30px 0 5px;" ng-model="expCtrl.expense.paymentType">
+          <option ng-value="Cash">By Cash</option>
+
+          <option value="Check">By Check</option>
+          <option value="Card">By Account</option>
+          <option value="Transfer">By Transfer</option>
+        </select>
+      </label>
+      <label class="item item-input">
+        <!--<span class="input-label">Enter Your Phone Number</span>-->
+        <p style="padding: 15px"><b>Bills</b></p>
+        <button class="button  " type="button" ui-sref="login">upload</button>
+        <button class="button " type="button" ui-sref="login">Take a picture</button>
+      </label>
+
+      <br>
+
+      <div align="center">
+        <button type="submit" class="button button-block button-positive">
+          Submit
+        </button>
+      </div>
+      <div align="center">
+        <button type="button" class="button button-block button-positive">
+          back
+        </button>
+      </div>
+    </form>
+
+
+  </div>
+</div>
+

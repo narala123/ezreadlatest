@@ -1,0 +1,17 @@
+
+<div class="table">
+  <ion-content class="table">
+    <div class="row header" >
+      <div class="col col-25">Date</div>
+      <div class="col col-25">Type</div>
+      <div class="col col-25">Amount</div>
+      <div class="col col-25">Total</div>
+    </div>
+    <div class="row" ng-repeat="summery in sumCtrl.summeryDetailes">
+      <div class="col col-25">{{summery.Date | date:"dd-MM-yyyy"}}</div>
+      <div class="col col-25">{{summery.Type}}</div>
+      <div class="col col-25"> {{summery.Amount}}</div>
+      <div class="col col-25">{{summery.Total}}</div>
+    </div>
+  </ion-content>
+</div>

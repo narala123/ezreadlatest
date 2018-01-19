@@ -1,0 +1,17 @@
+
+<div class="table">
+  <ion-content class="table">
+    <div class="row header" >
+      <div class="col col-25">Date</div>
+      <div class="col col-25">Category</div>
+      <div class="col col-25">Amount</div>
+      <div class="col col-25">Paid Type</div>
+    </div>
+    <div class="row" ng-repeat="data in expCtrl.expenseDetailes">
+      <div class="col col-25">{{data.Date | date:"dd-MM-yyyy"}}</div>
+      <div class="col col-25">{{data.Category}}</div>
+      <div class="col col-25"> {{data.Amount}}</div>
+      <div class="col col-25">{{data.Paid}}</div>
+    </div>
+  </ion-content>
+</div>

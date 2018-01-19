@@ -1,0 +1,93 @@
+<div>
+  <h1 align="center" style="background-color:cornflowerblue;height:70px;color: white">Expense Tracker</h1>
+
+  <div align="center">
+
+    <image src="img/exp1.jpg" style=" height:150px; width:230px"></image>
+  </div>
+  <div ng-hide="userCtrl.isSubmit">
+    <div class="responsive-sm">
+      <div class="card">
+        <form ng-submit="userCtrl.onSubmit()">
+          <!--<h1 align="center" style="background-color:cornflowerblue;height:70px;color: white">Spending Tracker</h1>-->
+
+          <div class="item item-text-wrap">
+            <h1 align="center" class="abc">Registration</h1>
+
+            <div class="list">
+
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Enter Mobile No</span>
+                <input type="text" placeholder="Enter Mobile No" ng-model="userCtrl.user.mobile">
+              </label>
+              <br>
+              <br>
+
+              <div align="center">
+                <button type="submit" class="button button-block button-positive" ng>
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div ng-show="userCtrl.isSubmit">
+    <div class="responsive-sm">
+      <div class="card">
+        <form ng-submit="userCtrl.otpsubmit()">
+
+
+          <div class="item item-text-wrap">
+
+
+            <div class="list">
+
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Enter Mobile No</span>
+                <input type="text" placeholder="Enter Mobil No" ng-model="userCtrl.user.mobile" disabled>
+              </label>
+
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Enter Your Otpno</span>
+                <input type="text" placeholder="Enter Your Otpno" ng-model="userCtrl.userotp.otpno">
+              </label>
+
+
+              <br>
+              <br>
+
+              <div align="center">
+                <button type="submit" class="button button-block button-positive" ng>
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<div class="responsive-sm"  style=" background: url(../img/expmng3.jpg);width:500px;" >-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

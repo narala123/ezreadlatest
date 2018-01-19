@@ -1,0 +1,35 @@
+<ion-scroll>
+  <div class="row responsive-md  incomecard">
+
+    <div class="card"ng-repeat="users in groupCtrl.groupNames">
+      <div class="b">
+        <span> {{users.groupName}} </span>
+        <i class="icon ion-edit editIcon" ng-click = "groupCtrl.groupMembersId(users._id)"></i>
+      </div>
+
+      <div class="row">
+        <div class="col-33">
+          <button class="button button-full button-positive"  ng-click="groupCtrl.groupIncomePageId(users._id)">INCOME</button>
+        </div>
+        <div class="col-33">
+          <button class="button  button-full button-positive" ng-click="groupCtrl.groupExpensePageId(users._id)">EXPENSE</button>
+        </div>
+        <div class="col-33">
+          <button class="button button-full button-positive" ng-click="groupCtrl.groupSummeryPageId(users._id)">SUMMERY</button>
+        </div>
+      </div>
+
+
+
+          <div class="row" ng-repeat="groupUser in users.groupUsers">
+            <div class=" col-33">{{groupUser.groupUserName}}</div>
+            <div class=" col-33"> {{groupUser.regMobileNO}}</div>
+            <div class="col-33"> <i class="icon ion-trash-a"></i></div>
+
+          </div>
+        </ion-content>
+      </div>
+    </div>
+
+  </div>
+</ion-scroll>
